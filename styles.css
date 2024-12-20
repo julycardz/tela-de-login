@@ -1,0 +1,239 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --cor-principal: #FFB901;
+    --cor-secundaria: #FFFFFF;
+    --cor-terceira:#957bbc8c;
+    --cor--body:#62458db4;
+    --cor-box:#dfc1ff;
+    --cor-quarta: #7c63a5;
+    --cor-texto: #000000;
+  
+    --fonte-principal: "Roboto", serif;
+    --tamanho-fonte-base: 12px;
+    --font-weight: 400;
+  }
+   
+  body{
+  
+    width: 100vw;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    font-family: "Roboto" , sans-serif;
+    background-color: var(--cor--body);
+    
+  }
+ 
+  .content{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    
+ }
+ .info img {
+  width: 50%; 
+  height: 78.7vh;
+  object-fit: cover;
+}
+
+
+ .info{
+    
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    max-width: 1084px; 
+    position: relative;
+
+ }
+ 
+
+ 
+/* formulario */ 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 30px;
+  width: 450px;
+
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form button {
+  align-self: flex-end;
+}
+
+.flex-column > label {
+  color: #151717;
+  font-weight: 600;
+}
+
+.inputForm {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  transition: 0.2s ease-in-out;
+  margin: 8px;
+}
+
+.input {
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 85%;
+  height: 50px;
+
+}
+
+.input:focus {
+  outline: none;
+ 
+}
+
+.inputForm:focus-within {
+  border: 1.5px solid #2d79f3;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.flex-row > div > label {
+  font-size: 14px;
+  color: black;
+  font-weight: 400;
+}
+
+.span {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #2d79f3;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button-submit {
+  margin: 20px 0 10px 0;
+  background-color: var(--cor-quarta);
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  height: 50px;
+  width: 70%;
+  margin: auto;
+  
+  cursor: pointer;
+ 
+}
+
+.button-submit:hover {
+  background-color: var(--cor-texto);
+}
+
+.p {
+  text-align: center;
+  color: black;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.btn {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  gap: 10px;
+  border: 1px solid #ededef;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  border: 1px solid #2d79f3;
+  ;
+}
+
+
+/* VERSÃO MOBILE */
+@media screen and (max-width: 1024px) {
+  .info {
+    flex-direction: column;   /* Organiza a imagem e o formulário em coluna */
+    align-items: center;      /* Centraliza o conteúdo */
+    text-align: center;       /* Centraliza o texto */
+    height: auto;
+    
+   
+   
+  }
+
+   
+  .info img{
+    width: 100%;
+    height: 200px;
+  }
+
+  .form {
+    width: 100%;
+    height: auto;
+    
+   
+  }
+
+
+
+  .title {
+    font-size: 1.4rem;         /* Diminui o tamanho do título */
+  }
+
+  .subtitle {
+    font-size: 0.9rem;         /* Diminui o tamanho da legenda */
+  }
+
+  .input {
+    font-size: 1rem;          /* Aumenta o tamanho da fonte dos inputs */
+   
+  }
+
+  .content{
+    height: auto;
+    padding: 0;
+      
+  }
+
+  .flex-row button {
+    margin-bottom: 100px;
+  }
+  
+}
+    
