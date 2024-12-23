@@ -292,7 +292,10 @@
     
 }
 
+.form{
+  height: 70vh;
 
+}
 
 .flex-row button {
   margin: 10px 30px 100px 15px;
@@ -304,27 +307,26 @@
  
 .info img {
  width: 50%; 
- height: 80vh}
+ height: 79vh}
 
 }
-.form{
-  height: 69.5vh;
 
-}
 
 /* Tablets (entre 768px e 1200px) */
 @media (max-width: 1200px) and (min-width: 768px) {
   .info {
     flex-direction: row;
     display: flex;
-    padding: 20px;
+
 
   }
-       
+    .form{
+      height: 70.3vh;
+    }  
     
    .info img {
     width: 50%; 
-    height: 80vh;
+   
     
   }
   
